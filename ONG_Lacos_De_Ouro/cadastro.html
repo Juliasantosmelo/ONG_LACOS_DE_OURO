@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja Voluntário - Laços de Ouro</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head> <body>
+
+    <header>
+        <h1>Laços de Ouro</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html">Nossos Projetos</a></li>
+                <li><a href="cadastro.html">Seja Voluntário</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <form action="#" method="post" class="formulario-moderno">
+            <h1>Cadastro de Voluntários</h1>
+            <p>Que alegria saber do seu interesse! Por favor, preencha o formulário abaixo e entraremos em contato.</p>
+
+            <fieldset>
+                <legend>Seus Dados Pessoais</legend>
+                
+                <div>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo" class="campo-entrada">
+                </div>
+                
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="seuemail@dominio.com" class="campo-entrada">
+                </div>
+
+                <div>
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" required placeholder="000.000.000-00" class="campo-entrada">
+                </div>
+
+                <div>
+                    <label for="telefone">Telefone / Celular:</label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000" class="campo-entrada">
+                </div>
+
+                <div>
+                    <label for="nascimento">Data de Nascimento:</label>
+                    <input type="date" id="nascimento" name="nascimento" required class="campo-entrada">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Seu Endereço</legend>
+
+                <div>
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" required placeholder="00000-000" class="campo-entrada">
+                </div>
+
+                <div>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" required class="campo-entrada">
+                </div>
+
+                <div>
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" required class="campo-entrada">
+                </div>
+
+                <div>
+                    <label for="estado">Estado:</label>
+                    <input type="text" id="estado" name="estado" required class="campo-entrada">
+                </div>
+            </fieldset>
+
+            <button type="submit" class="botao botao-primario">Enviar Cadastro</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h2>Fale Conosco</h2>
+            <p>Email: contato@lacosdeouro.org</p>
+            <p>Telefone: (11) 91234-5678</p>
+            <p>&copy; 2025 Laços de Ouro. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/imask"></script>
+    <script>
+        // Aplica a máscara no campo de CPF
+        IMask(document.getElementById('cpf'), {
+            mask: '000.000.000-00'
+        });
+
+        // Aplica a máscara no campo de Telefone
+        IMask(document.getElementById('telefone'), {
+            mask: '(00) 00000-0000'
+        });
+
+        // Aplica a máscara no campo de CEP
+        IMask(document.getElementById('cep'), {
+            mask: '00000-000'
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
