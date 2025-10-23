@@ -11,57 +11,115 @@
 <body>
 
     <header>
-    <div class="container"> 
-        
-        <div class="logo"> 
-            <h1>Laços de Ouro</h1>
-            <p>Apoio e Carinho para a Terceira Idade</p>
-        </div>
-
-        <nav>
-    <ul>
-        <li><a href="index.html">Início</a></li>
-
-        <li class="menu-dropdown">
-            <a href="projetos.html">Nossos Projetos</a>
-            <ul class="submenu">
-                <li><a href="projetos.html#clube-leitura">Clube da Leitura</a></li>
-                <li><a href="projetos.html#tardes-jogos">Tardes de Jogos</a></li>
-            </ul>
-        </li>
-
-        <li><a href="cadastro.html">Seja Voluntário</a></li>
-    </ul>
-</nav>
-
-        <div class="menu-hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        </div> </header>
+        <div class="container"> 
+            <div class="logo"> 
+                <h1>Laços de Ouro</h1>
+                <p>Apoio e Carinho para a Terceira Idade</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li class="menu-dropdown">
+                        <a href="projetos.html">Nossos Projetos</a>
+                        <ul class="submenu">
+                            <li><a href="projetos.html#clube-leitura">Clube da Leitura</a></li>
+                            <li><a href="projetos.html#tardes-jogos">Tardes de Jogos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="cadastro.html">Seja Voluntário</a></li>
+                </ul>
+            </nav>
+            <div class="menu-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div> 
+    </header>
 
     <main>
         
-        <section class="container">
-            <h2>Dignidade e Companhia para Quem Mais Experiência Tem</h2>
-            <img src="imagens/banner-principal.jpeg" alt="..." class="banner-principal">
-            
-            <p>Nossa missão é levar afeto, companhia e assistência para idosos em asilos e residenciais, garantindo que a terceira idade seja vivida com alegria e respeito.</p>
+        <section class="container hero"> 
+            <div class="hero-content"> 
+                <h2>Dignidade e Companhia para Quem Mais Experiência Tem</h2>
+                <p>Nossa missão é levar afeto, companhia e assistência para idosos em asilos e residenciais, garantindo que a terceira idade seja vivida com alegria e respeito.</p>
+                <div class="hero-actions">
+                    <a href="cadastro.html" class="botao botao-primario">Seja Voluntário</a> 
+                    <button id="btn-rolar-doacao" class="botao botao-primario">Faça uma Doação</button>
+                </div>
+            </div>
+            <div class="hero-image"> 
+                <img src="imagens/banner-principal.jpeg" alt="Voluntário jovem sorrindo e pegando nas mãos de um senhor idoso em uma sala." class="banner-principal"> 
+            </div>
         </section>
+
+        <section class="container impacto">
+             <h2>Nosso Impacto em Números</h2>
+             <div class="impacto-grid">
+                 <div class="impacto-item">
+                     <span class="numero">+50</span>
+                     <span class="descricao">Idosos Visitados Semanalmente</span>
+                 </div>
+                 <div class="impacto-item">
+                     <span class="numero">+100</span>
+                     <span class="descricao">Voluntários Ativos</span>
+                 </div>
+                 <div class="impacto-item">
+                     <span class="numero">+2000</span>
+                     <span class="descricao">Horas de Companhia em 2025</span>
+                 </div>
+             </div>
+         </section>
 
         <section class="container">
             <h2>Nossa História</h2>
-            <p>A "Laços de Ouro" foi fundada em 2025 por um grupo de voluntários que acreditavam no poder de um simples gesto de carinho. Hoje, atuamos em diversas casas de repouso, promovendo atividades de leitura, jogos e, o mais importante, conversas cheias de afeto.</p>
+            <p>A "Laços de Ouro" foi fundada em 2025 por um grupo de voluntários...</p> 
         </section>
 
-    </main> <footer>
-        <div class="container"> <h2>Fale Conosco</h2>
+        <section class="container depoimentos">
+             <h2>O Que Dizem Sobre Nós</h2>
+             <div class="depoimento-grid">
+                 <blockquote class="depoimento-item">
+                     <p>"Ser voluntária na Laços de Ouro mudou minha perspectiva..."</p>
+                     <footer>- Ana Silva, Voluntária</footer>
+                 </blockquote>
+                 <blockquote class="depoimento-item">
+                     <p>"Desde que as visitas começaram, minha mãe está muito mais feliz..."</p>
+                     <footer>- Carlos Pereira, Familiar </footer>
+                 </blockquote>
+             </div>
+         </section>
+        
+        <section class="container como-doar" id="como-doar">
+            <h2>Faça a Diferença!</h2>
+            <p>Sua doação nos ajuda a continuar nosso trabalho...</p>
+            <button id="abrir-modal-doacao-home" class="botao botao-primario">Doar via PIX</button>
+        </section>
+
+    </main> 
+
+    <div id="modal-doacao" class="modal-overlay">
+        <div class="modal-conteudo">
+            <button id="fechar-modal" class="modal-fechar">&times;</button>
+            <h2>Apoie a Laços de Ouro!</h2>
+            <p>Sua contribuição faz a diferença na vida de muitos idosos.</p>
+            <p>Você pode doar via PIX:</p>
+            <p><strong>Chave PIX (E-mail):</strong> contato@lacosdeouro.org</p>
+            <img src="imagens/qrcode-pix-exemplo.png" alt="QR Code PIX Exemplo" style="max-width: 150px; margin: 1rem auto; display: block;">
+            <p style="font-size: var(--fonte-pequena); text-align: center;">(Use um QR Code PIX de exemplo)</p>
+            <p>Muito obrigado pelo seu apoio!</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container"> 
+            <h2>Fale Conosco</h2>
             <p>Email: contato@lacosdeouro.org</p>
             <p>Telefone: (11) 91234-5678</p>
             <p>&copy; 2025 Laços de Ouro. Todos os direitos reservados.</p>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

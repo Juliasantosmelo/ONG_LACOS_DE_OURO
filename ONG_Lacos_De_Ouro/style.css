@@ -268,6 +268,17 @@ nav ul li a:hover {
     color: var(--cor-primaria); /* Título do card em dourado */
     margin-bottom: var(--esp-16px);
 }
+/* Estilo para os detalhes extras dentro do card */
+.detalhe-projeto {
+    font-size: var(--fonte-pequena); /* Usa nossa fonte pequena */
+    color: var(--cor-secundaria); /* Cinza escuro */
+    margin-bottom: var(--esp-8px); /* Espaço pequeno entre os detalhes */
+    line-height: 1.4; /* Ajusta a altura da linha */
+}
+
+.detalhe-projeto strong {
+    color: var(--cor-primaria); /* Deixa o "Frequência:", "Local:" em dourado */
+}
 /* * -------------------------------------------
  * ETAPA 6: AJUSTES DE IMAGEM
  * -------------------------------------------
@@ -631,4 +642,202 @@ nav ul li a:hover {
 input.erro-validacao {
     border-color: var(--cor-erro);
     box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+}
+/* * -------------------------------------------
+ * ETAPA 12: ESTILOS ADICIONAIS (INDEX.HTML)
+ * -------------------------------------------
+ */
+
+/* --- Seção Hero (Banner Principal) --- */
+.hero {
+    display: flex; /* Alinha texto e imagem lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    gap: var(--esp-32px); /* Espaço entre texto e imagem */
+    flex-wrap: wrap; /* Permite quebrar em telas menores */
+}
+
+.hero-content {
+    flex: 1 1 50%; /* Tenta ocupar 50% da largura */
+    min-width: 300px; /* Largura mínima antes de quebrar */
+}
+
+.hero-image {
+    flex: 1 1 40%; /* Tenta ocupar 40% da largura */
+    min-width: 300px;
+}
+
+.hero-actions {
+    margin-top: var(--esp-24px);
+    display: flex;
+    gap: var(--esp-16px); /* Espaço entre os botões */
+    flex-wrap: wrap; /* Permite quebrar botões em telas pequenas */
+}
+
+/* --- ESTILOS DO BOTÃO --- */
+
+/* Regra base para TODOS os botões e links com a classe .botao */
+.botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.875rem 2rem;
+    font-weight: 600;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border: none;
+    font-size: var(--fonte-corpo);
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Estilo específico para o botão primário (dourado) */
+.botao-primario {
+    background: var(--cor-primaria);
+    color: var(--cor-branco);
+}
+.botao-primario:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(192, 154, 108, 0.4); /* Sombra dourada */
+}
+
+/* Estilo específico para o botão secundário (transparente com borda) */
+.botao-secundario {
+    background-color: transparent;
+    color: var(--cor-primaria);
+    border: 2px solid var(--cor-primaria);
+}
+.botao-secundario:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+    transform: translateY(-2px);
+}
+
+/* Regra para fazer o botão DENTRO do formulário ocupar 100% da largura */
+.formulario-moderno .botao {
+    width: 100%;
+}
+/* FIM DOS ESTILOS DE BOTÃO */
+
+
+/* --- Seção Impacto em Números --- */
+.impacto {
+    text-align: center;
+    background-color: var(--cor-branco); /* Fundo branco para destacar */
+    padding-top: var(--esp-48px);
+    padding-bottom: var(--esp-48px);
+    border-radius: var(--border-radius);
+    box-shadow: var(--sombra-suave);
+    margin-top: var(--esp-32px);
+    margin-bottom: var(--esp-32px);
+}
+
+.impacto h2 {
+    margin-bottom: var(--esp-32px);
+    color: var(--cor-primaria);
+}
+
+.impacto-grid {
+    display: flex;
+    justify-content: space-around; /* Espaça os itens igualmente */
+    flex-wrap: wrap;
+    gap: var(--esp-24px);
+}
+
+.impacto-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.impacto-item .numero {
+    font-size: var(--fonte-titulo-gg);
+    font-weight: 700;
+    color: var(--cor-primaria);
+    line-height: 1;
+}
+
+.impacto-item .descricao {
+    font-size: var(--fonte-pequena);
+    color: var(--cor-secundaria);
+}
+
+/* --- Seção Depoimentos --- */
+.depoimentos {
+    text-align: center;
+    margin-top: var(--esp-32px);
+    margin-bottom: var(--esp-32px);
+}
+
+.depoimentos h2 {
+     margin-bottom: var(--esp-32px);
+}
+
+.depoimento-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--esp-24px);
+    justify-content: center;
+}
+
+.depoimento-item {
+    flex: 1 1 350px; /* Similar aos cards */
+    max-width: 400px;
+    background-color: var(--cor-branco);
+    padding: var(--esp-24px);
+    border-radius: var(--border-radius);
+    box-shadow: var(--sombra-suave);
+    border-left: 5px solid var(--cor-primaria); /* Detalhe dourado */
+    text-align: left;
+    margin-bottom: 0; /* Remove margem padrão do blockquote */
+}
+
+.depoimento-item p {
+    font-style: italic;
+    margin-bottom: var(--esp-16px);
+}
+
+.depoimento-item footer {
+    font-size: var(--fonte-pequena);
+    font-weight: 600;
+    color: var(--cor-primaria);
+}
+
+/* --- Seção Como Doar --- */
+.como-doar {
+    text-align: center;
+    background-color: var(--cor-secundaria); /* Fundo escuro para contraste */
+    color: var(--cor-fundo); /* Texto claro */
+    padding-top: var(--esp-48px);
+    padding-bottom: var(--esp-48px);
+    border-radius: var(--border-radius);
+    margin-top: var(--esp-32px);
+    margin-bottom: var(--esp-32px);
+}
+
+.como-doar h2 {
+    color: var(--cor-primaria); /* Título dourado */
+    margin-bottom: var(--esp-16px);
+}
+
+.como-doar p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--esp-24px);
+}
+
+/* Ajuste nos breakpoints para as novas seções */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse; /* Imagem vai para cima no mobile */
+    }
+    .impacto-grid {
+        flex-direction: column; /* Números um embaixo do outro */
+        gap: var(--esp-32px);
+    }
+    .depoimento-grid {
+        flex-direction: column;
+        align-items: center;
+    }
 }

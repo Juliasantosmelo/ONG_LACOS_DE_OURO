@@ -11,22 +11,30 @@
 <body>
 
     <header>
-        <h1>Laços de Ouro</h1>
-        <nav>
-    <ul>
-        <li><a href="index.html">Início</a></li>
-
-        <li class="menu-dropdown">
-            <a href="projetos.html">Nossos Projetos</a>
-            <ul class="submenu">
-                <li><a href="projetos.html#clube-leitura">Clube da Leitura</a></li>
-                <li><a href="projetos.html#tardes-jogos">Tardes de Jogos</a></li>
-            </ul>
-        </li>
-
-        <li><a href="cadastro.html">Seja Voluntário</a></li>
-    </ul>
-</nav>
+        <div class="container"> 
+            <div class="logo"> 
+                <h1>Laços de Ouro</h1>
+                <p>Apoio e Carinho para a Terceira Idade</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li class="menu-dropdown">
+                        <a href="projetos.html">Nossos Projetos</a>
+                        <ul class="submenu">
+                            <li><a href="projetos.html#clube-leitura">Clube da Leitura</a></li>
+                            <li><a href="projetos.html#tardes-jogos">Tardes de Jogos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="cadastro.html">Seja Voluntário</a></li>
+                </ul>
+            </nav>
+            <div class="menu-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div> 
     </header>
 
     <main>
@@ -34,36 +42,15 @@
         <section class="container">
             <h1>Conheça Nossas Atividades</h1>
 
-            <div class="projeto-lista"> 
-            
-                <article class="projeto-card"> 
-                    <img src="imagens/projeto-leitura.jpg" alt="Voluntária lendo um livro em voz alta para um grupo de idosos atentos.">
-                    <div class="projeto-card-conteudo">
+            <div class="projeto-lista" id="lista-de-projetos"> 
+                </div> 
+            </section> 
 
-                        <span class="tag tag-leitura">Leitura</span>
-                        <h2>Clube da Leitura</h2>
-
-                        <p>Semanalmente, nossos voluntários organizam sessões de leitura em voz alta, trazendo os mundos da literatura para quem tem dificuldade de ler.</p>
-                    </div>
-                </article>
-
-                <article class="projeto-card"> 
-                    <img src="imagens/projeto-jogos.jpg" alt="Um senhor e uma jovem sorrindo enquanto jogam uma partida de xadrez.">
-                    <div class="projeto-card-conteudo">
-                        <span class="tag tag-jogos">Jogos</span>
-                        <h2>Tardes de Jogos</h2>
-                        <p>Estimulamos a mente e a interação social com tardes dedicadas a jogos de tabuleiro, como xadrez, damas e baralho.</p>
-                    </div>
-                </article>
-
-                </div> </section> <section class="container">
+        <section class="container">
             <h2>Como Você Pode Ajudar</h2>
             <h3><a href="cadastro.html">Seja um Voluntário</a></h3>
-            <p>Você tem algumas horas livres na semana? Doe seu tempo para conversar, ler ou jogar. O carinho é o bem mais precioso que você pode oferecer. Para participar, preencha nosso formulário de cadastro!</p>
-
-            <h3 id="abrir-modal-doacao" style="cursor: pointer; color: var(--cor-link);">Faça uma Doação</h3>
-            <p>Sua doação nos ajuda a comprar novos livros, jogos e a organizar lanches especiais para os encontros. Qualquer contribuição é muito bem-vinda.</p>
-            <p><strong>Nossa Chave PIX:</strong> contato@lacosdeouro.org</p>
+            <p>Você tem algumas horas livres na semana? Doe seu tempo para conversar, ler ou jogar...</p> <h3 id="abrir-modal-doacao" style="cursor: pointer; color: var(--cor-link);">Faça uma Doação</h3>
+            <p>Sua doação nos ajuda a comprar novos livros, jogos e a organizar lanches especiais...</p> <p><strong>Nossa Chave PIX:</strong> contato@lacosdeouro.org</p>
         </section>
 
     </main>
@@ -78,17 +65,18 @@
     </footer>
     
     <div id="modal-doacao" class="modal-overlay">
-    <div class="modal-conteudo">
-        <button id="fechar-modal" class="modal-fechar">&times;</button>
-        <h2>Apoie a Laços de Ouro!</h2>
-        <p>Sua contribuição faz a diferença na vida de muitos idosos.</p>
-        <p>Você pode doar via PIX:</p>
-        <p><strong>Chave PIX (E-mail):</strong> contato@lacosdeouro.org</p>
-        <img src="imagens/qrcode-pix-exemplo.png" alt="QR Code PIX Exemplo" style="max-width: 150px; margin: 1rem auto; display: block;">
-        <p style="font-size: var(--fonte-pequena); text-align: center;">(Use um QR Code PIX de exemplo)</p>
-        <p>Muito obrigado pelo seu apoio!</p>
+        <div class="modal-conteudo">
+            <button id="fechar-modal" class="modal-fechar">&times;</button>
+            <h2>Apoie a Laços de Ouro!</h2>
+            <p>Sua contribuição faz a diferença na vida de muitos idosos.</p>
+            <p>Você pode doar via PIX:</p>
+            <p><strong>Chave PIX (E-mail):</strong> contato@lacosdeouro.org</p>
+            <img src="imagens/qrcode-pix-exemplo.png" alt="QR Code PIX Exemplo" style="max-width: 150px; margin: 1rem auto; display: block;">
+            <p style="font-size: var(--fonte-pequena); text-align: center;">(Use um QR Code PIX de exemplo)</p>
+            <p>Muito obrigado pelo seu apoio!</p>
+        </div>
     </div>
-</div>
-<script src="script.js"></script>
+
+    <script src="script.js"></script> 
 </body>
 </html>
