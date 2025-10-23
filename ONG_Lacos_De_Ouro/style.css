@@ -598,3 +598,37 @@ nav ul li a:hover {
     .col-11 { width: calc(100% / 12 * 11); }
     .col-12 { width: calc(100% / 12 * 12); } /* Largura total */
 }
+/* * -------------------------------------------
+ * ETAPA 11: ESTILOS PARA VALIDAÇÃO JS
+ * -------------------------------------------
+ */
+
+/* Garante que cada "linha" do formulário (label + input + erro) tenha espaço */
+.formulario-moderno fieldset div {
+    margin-bottom: var(--esp-16px); /* Adiciona espaço abaixo de cada campo */
+}
+
+/* FORÇA O LABEL A OCUPAR SUA PRÓPRIA LINHA */
+.formulario-moderno label {
+    display: block; /* Faz o label ocupar 100% da largura */
+    margin-bottom: var(--esp-8px); /* Espaço entre o label e o input */
+    font-weight: 600; /* Deixa o label em negrito (opcional) */
+}
+
+/* Garante que o input ocupe 100% (já deve estar ok com .campo-entrada) */
+/* .campo-entrada { width: 100%; ... } */
+
+/* REFORÇA QUE A MENSAGEM DE ERRO OCUPA SUA PRÓPRIA LINHA */
+.mensagem-erro {
+    color: var(--cor-erro);
+    font-size: var(--fonte-pequena);
+    display: block; /* <<< ESTA LINHA É A CHAVE! Força a ficar embaixo */
+    min-height: 1.2em; 
+    margin-top: var(--esp-8px);
+}
+
+/* Estilo do input com erro (você já tem isso) */
+input.erro-validacao {
+    border-color: var(--cor-erro);
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+}
