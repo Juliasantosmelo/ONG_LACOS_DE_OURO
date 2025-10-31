@@ -3,7 +3,7 @@ const projetos = [
     {
         id: 'clube-leitura', // ID para o link #
         titulo: 'Clube da Leitura',
-        imagem: 'imagens/projeto-leitura.jpg',
+        imagem: 'imagens/projeto-leitura.webp',
         alt: 'Voluntária lendo um livro em voz alta para um grupo de idosos atentos.',
         descricao: 'Sessões semanais de leitura em voz alta, trazendo os mundos da literatura para quem tem dificuldade de ler.',
         tag: 'Leitura',
@@ -15,7 +15,7 @@ const projetos = [
     {
         id: 'tardes-jogos', // ID para o link #
         titulo: 'Tardes de Jogos',
-        imagem: 'imagens/projeto-jogos.jpg',
+        imagem: 'imagens/projeto-jogos.webp',
         alt: 'Um senhor e uma jovem sorrindo enquanto jogam uma partida de xadrez.',
         descricao: 'Estimulamos a mente e a interação social com jogos de tabuleiro como xadrez, damas e baralho. A competição é amigável!',
         tag: 'Jogos',
