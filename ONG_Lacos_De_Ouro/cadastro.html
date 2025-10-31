@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seja Voluntário - Laços de Ouro</title>
     <link rel="stylesheet" href="style.css">
+</head>
 
-</head> <body>
+<body>
 
     <header>
         <h1>Laços de Ouro</h1>
-        <nav>
+        <nav id="menu-principal">
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li class="menu-dropdown">
@@ -24,50 +25,61 @@
                 <li><a href="cadastro.html">Seja Voluntário</a></li>
             </ul>
         </nav>
-        <div class="menu-hamburger">
-             <span></span>
-             <span></span>
-             <span></span>
+
+        <!-- Alternador de tema -->
+        <div class="tema-switcher">
+            <label for="switch-tema" class="switch-label">Modo Escuro</label>
+            <input type="checkbox" id="switch-tema" class="switch-checkbox">
+            <label for="switch-tema" class="switch-toggle"></label>
+        </div>
+
+        <!-- Menu mobile -->
+        <div class="menu-hamburger" role="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </header>
 
     <main>
-        
         <form action="#" method="post" class="formulario-moderno" id="form-cadastro">
             <h1>Cadastro de Voluntários</h1>
             <p>Que alegria saber do seu interesse! Por favor, preencha o formulário abaixo e entraremos em contato.</p>
 
             <fieldset>
                 <legend>Seus Dados Pessoais</legend>
-                
+
                 <div>
                     <label for="nome">Nome Completo:</label>
-                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo" class="campo-entrada">
-                    <span class="mensagem-erro" aria-live="polite"></span> 
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo"
+                        class="campo-entrada">
+                    <span class="mensagem-erro" aria-live="polite"></span>
                 </div>
-                
+
                 <div>
                     <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required placeholder="seuemail@dominio.com" class="campo-entrada">
-                    <span class="mensagem-erro" aria-live="polite"></span> 
+                    <input type="email" id="email" name="email" required placeholder="seuemail@dominio.com"
+                        class="campo-entrada">
+                    <span class="mensagem-erro" aria-live="polite"></span>
                 </div>
 
                 <div>
                     <label for="cpf">CPF:</label>
                     <input type="text" id="cpf" name="cpf" required placeholder="000.000.000-00" class="campo-entrada">
-                    <span class="mensagem-erro" aria-live="polite"></span> 
+                    <span class="mensagem-erro" aria-live="polite"></span>
                 </div>
 
                 <div>
                     <label for="telefone">Telefone / Celular:</label>
-                    <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000" class="campo-entrada">
-                    <span class="mensagem-erro" aria-live="polite"></span> 
+                    <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000"
+                        class="campo-entrada">
+                    <span class="mensagem-erro" aria-live="polite"></span>
                 </div>
 
                 <div>
                     <label for="nascimento">Data de Nascimento:</label>
                     <input type="date" id="nascimento" name="nascimento" required class="campo-entrada">
-                    <span class="mensagem-erro" aria-live="polite"></span> 
+                    <span class="mensagem-erro" aria-live="polite"></span>
                 </div>
             </fieldset>
 
@@ -77,29 +89,60 @@
                 <div>
                     <label for="cep">CEP:</label>
                     <input type="text" id="cep" name="cep" required placeholder="00000-000" class="campo-entrada">
-                    <span class="mensagem-erro" aria-live="polite"></span> 
+                    <span class="mensagem-erro" aria-live="polite"></span>
                 </div>
 
                 <div>
                     <label for="endereco">Endereço:</label>
                     <input type="text" id="endereco" name="endereco" required class="campo-entrada">
-                    <span class="mensagem-erro" aria-live="polite"></span> 
+                    <span class="mensagem-erro" aria-live="polite"></span>
                 </div>
 
                 <div>
                     <label for="cidade">Cidade:</label>
                     <input type="text" id="cidade" name="cidade" required class="campo-entrada">
-                    <span class="mensagem-erro" aria-live="polite"></span> 
+                    <span class="mensagem-erro" aria-live="polite"></span>
                 </div>
 
                 <div>
                     <label for="estado">Estado:</label>
-                    <input type="text" id="estado" name="estado" required class="campo-entrada">
-                    <span class="mensagem-erro" aria-live="polite"></span> 
+                    <select id="estado" name="estado" required class="campo-entrada">
+                        <option value="">Selecione</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+                    <span class="mensagem-erro" aria-live="polite"></span>
                 </div>
             </fieldset>
 
-            <button type="submit" class="botao botao-primario">Enviar Cadastro</button>
+            <button type="submit" class="botao botao-primario" aria-label="Enviar formulário de voluntário">
+                Enviar Cadastro
+            </button>
         </form>
     </main>
 
@@ -112,8 +155,30 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://unpkg.com/imask"></script>
-    <script src="script.js"></script> 
+
+    <script>
+        // Máscaras automáticas
+        IMask(document.getElementById('cpf'), { mask: '000.000.000-00' });
+        IMask(document.getElementById('telefone'), { mask: '(00) 00000-0000' });
+        IMask(document.getElementById('cep'), { mask: '00000-000' });
+
+        // Modo escuro
+        const switchTema = document.getElementById('switch-tema');
+        switchTema.addEventListener('change', () => {
+            document.body.classList.toggle('modo-escuro', switchTema.checked);
+        });
+
+        // Menu mobile
+        const menuHamburger = document.getElementById('menu-hamburger');
+        const nav = document.querySelector('nav');
+        menuHamburger.addEventListener('click', () => {
+            nav.classList.toggle('ativo');
+            menuHamburger.classList.toggle('ativo');
+        });
+    </script>
 
 </body>
+
 </html>

@@ -16,7 +16,7 @@
                 <h1>Laços de Ouro</h1>
                 <p>Apoio e Carinho para a Terceira Idade</p>
             </div>
-            <nav>
+           <nav id="menu-principal">
                 <ul>
                     <li><a href="index.html">Início</a></li>
                     <li class="menu-dropdown">
@@ -29,7 +29,13 @@
                     <li><a href="cadastro.html">Seja Voluntário</a></li>
                 </ul>
             </nav>
-            <div class="menu-hamburger">
+                <div class="tema-switcher">
+    <label for="switch-tema" class="switch-label">Modo Escuro</label>
+    <input type="checkbox" id="switch-tema" class="switch-checkbox">
+    <label for="switch-tema" class="switch-toggle"></label>
+                </div>
+
+            <div class="menu-hamburger" role="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -98,10 +104,10 @@
 
     </main> 
 
-    <div id="modal-doacao" class="modal-overlay">
+    <div id="modal-doacao" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="titulo-modal">
         <div class="modal-conteudo">
-            <button id="fechar-modal" class="modal-fechar">&times;</button>
-            <h2>Apoie a Laços de Ouro!</h2>
+            <button id="fechar-modal" class="modal-fechar" aria-label="Fechar modal">&times;</button>
+            <h2 id="titulo-modal">Apoie a Laços de Ouro!</h2>
             <p>Sua contribuição faz a diferença na vida de muitos idosos.</p>
             <p>Você pode doar via PIX:</p>
             <p><strong>Chave PIX (E-mail):</strong> contato@lacosdeouro.org</p>
