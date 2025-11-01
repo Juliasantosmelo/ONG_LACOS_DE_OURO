@@ -1,93 +1,78 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
+<!doctype html>
+<html lang=pt-BR>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nossos Projetos - Laços de Ouro</title>
-    <link rel="stylesheet" href="style.min.css">
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Nossos Projetos - Laços de Ouro</title>
+<link rel=stylesheet href=style.min.css>
 </head>
-
 <body>
-
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h1>Laços de Ouro</h1>
-                <p>Apoio e Carinho para a Terceira Idade</p>
-            </div>
-            <nav id="menu-principal">
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li class="menu-dropdown">
-                        <a href="projetos.html">Nossos Projetos</a>
-                        <ul class="submenu">
-                            <li><a href="projetos.html#clube-leitura">Clube da Leitura</a></li>
-                            <li><a href="projetos.html#tardes-jogos">Tardes de Jogos</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="cadastro.html">Seja Voluntário</a></li>
-                </ul>
-            </nav>
-            <!-- Alternador de tema -->
-            <div class="tema-switcher">
-                <label for="switch-tema" class="switch-label">Modo Escuro</label>
-                <input type="checkbox" id="switch-tema" class="switch-checkbox">
-                <label for="switch-tema" class="switch-toggle"></label>
-            </div>
-            <!-- Menu mobile -->
-            <div class="menu-hamburger" role="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </header>
-
-    <main>
-
-        <section class="container">
-            <h1>Conheça Nossas Atividades</h1>
-
-            <div class="projeto-lista" id="lista-de-projetos">
-            </div>
-        </section>
-
-        <section class="container">
-            <h2>Como Você Pode Ajudar</h2>
-            <h3><a href="cadastro.html">Seja um Voluntário</a></h3>
-            <p>Você tem algumas horas livres na semana? Doe seu tempo para conversar, ler ou jogar...</p>
-            <h3 id="abrir-modal-doacao" style="cursor: pointer; color: var(--cor-link);">Faça uma Doação</h3>
-            <p>Sua doação nos ajuda a comprar novos livros, jogos e a organizar lanches especiais...</p>
-            <p><strong>Nossa Chave PIX:</strong> contato@lacosdeouro.org</p>
-        </section>
-
-    </main>
-
-    <footer>
-        <div class="container">
-            <h2>Fale Conosco</h2>
-            <p>Email: contato@lacosdeouro.org</p>
-            <p>Telefone: (11) 91234-5678</p>
-            <p>&copy; 2025 Laços de Ouro. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-    <div id="modal-doacao" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="titulo-modal">
-        <div class="modal-conteudo">
-            <button id="fechar-modal" class="modal-fechar" aria-label="Fechar modal">&times;</button>
-            <h2 id="titulo-modal">Apoie a Laços de Ouro!</h2>
-            <p>Sua contribuição faz a diferença na vida de muitos idosos.</p>
-            <p>Você pode doar via PIX:</p>
-            <p><strong>Chave PIX (E-mail):</strong> contato@lacosdeouro.org</p>
-            <img src="imagens/qrcode-pix-exemplo.webp" alt="QR Code PIX Exemplo"
-                style="max-width: 150px; margin: 1rem auto; display: block;">
-            <p style="font-size: var(--fonte-pequena); text-align: center;">(Use um QR Code PIX de exemplo)</p>
-            <p>Muito obrigado pelo seu apoio!</p>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+<header>
+<div class=container>
+<div class=logo>
+<h1>Laços de Ouro</h1>
+<p>Apoio e Carinho para a Terceira Idade</p>
+</div>
+<nav id=menu-principal>
+<ul>
+<li><a href=index.html>Início</a></li>
+<li class=menu-dropdown>
+<a href=projetos.html>Nossos Projetos</a>
+<ul class=submenu>
+<li><a href=projetos.html#clube-leitura>Clube da Leitura</a></li>
+<li><a href=projetos.html#tardes-jogos>Tardes de Jogos</a></li>
+</ul>
+</li>
+<li><a href=cadastro.html>Seja Voluntário</a></li>
+</ul>
+</nav>
+<div class=tema-switcher>
+<label for=switch-tema class=switch-label>Modo Escuro</label>
+<input type=checkbox id=switch-tema class=switch-checkbox>
+<label for=switch-tema class=switch-toggle></label>
+</div>
+<div class=menu-hamburger role=button aria-expanded=false aria-controls=menu-principal aria-label="Abrir menu">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</header>
+<main>
+<section class=container>
+<h1>Conheça Nossas Atividades</h1>
+<div class=projeto-lista id=lista-de-projetos>
+</div>
+</section>
+<section class=container>
+<h2>Como Você Pode Ajudar</h2>
+<h3><a href=cadastro.html>Seja um Voluntário</a></h3>
+<p>Você tem algumas horas livres na semana? Doe seu tempo para conversar, ler ou jogar...</p>
+<h3 id=abrir-modal-doacao style=cursor:pointer;color:var(--cor-link)>Faça uma Doação</h3>
+<p>Sua doação nos ajuda a comprar novos livros, jogos e a organizar lanches especiais...</p>
+<p><strong>Nossa Chave PIX:</strong> contato@lacosdeouro.org</p>
+</section>
+</main>
+<footer>
+<div class=container>
+<h2>Fale Conosco</h2>
+<p>Email: contato@lacosdeouro.org</p>
+<p>Telefone: (11) 91234-5678</p>
+<p>&copy; 2025 Laços de Ouro. Todos os direitos reservados.</p>
+</div>
+</footer>
+<div id=modal-doacao class=modal-overlay role=dialog aria-modal=true aria-labelledby=titulo-modal>
+<div class=modal-conteudo>
+<button id=fechar-modal class=modal-fechar aria-label="Fechar modal">&times;</button>
+<h2 id=titulo-modal>Apoie a Laços de Ouro!</h2>
+<p>Sua contribuição faz a diferença na vida de muitos idosos.</p>
+<p>Você pode doar via PIX:</p>
+<p><strong>Chave PIX (E-mail):</strong> contato@lacosdeouro.org</p>
+<img src=imagens/qrcode-pix-exemplo.webp alt="QR Code PIX Exemplo" style="max-width:150px;margin:1rem auto;display:block">
+<p style=font-size:var(--fonte-pequena);text-align:center>(Use um QR Code PIX de exemplo)</p>
+<p>Muito obrigado pelo seu apoio!</p>
+</div>
+</div>
+<script src=script.min.js></script>
 </body>
-
 </html>
