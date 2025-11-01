@@ -158,27 +158,7 @@
     <!-- Scripts -->
     <script src="https://unpkg.com/imask"></script>
 
-    <script>
-        // Máscaras automáticas
-        IMask(document.getElementById('cpf'), { mask: '000.000.000-00' });
-        IMask(document.getElementById('telefone'), { mask: '(00) 00000-0000' });
-        IMask(document.getElementById('cep'), { mask: '00000-000' });
-
-        // Modo escuro
-        const switchTema = document.getElementById('switch-tema');
-        switchTema.addEventListener('change', () => {
-            document.body.classList.toggle('modo-escuro', switchTema.checked);
-        });
-
-        // Menu mobile
-        const menuHamburger = document.getElementById('menu-hamburger');
-        const nav = document.querySelector('nav');
-        menuHamburger.addEventListener('click', () => {
-            nav.classList.toggle('ativo');
-            menuHamburger.classList.toggle('ativo');
-        });
-    </script>
     <script src="script.min.js"></script>
+    
 </body>
-
 </html>
